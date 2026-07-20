@@ -1,6 +1,6 @@
 # Falsky Action — AI Flaky Test Detector
 
-GitHub Action that analyzes your CI test results using the [Falsky Trust Engine](https://github.com/Pritahi/falsky-test) and posts a trust score report as a PR comment.
+GitHub Action that analyzes your CI test results using the [Falsky Trust Engine](https://github.com/Pritahi/falsky-core) and posts a trust score report as a PR comment.
 
 ![Falsky](https://img.shields.io/badge/Falsky-AI%20Test%20Trust-purple)
 
@@ -65,7 +65,7 @@ jobs:
 | Input | Required | Default | Description |
 |-------|----------|---------|-------------|
 | `junit-xml-path` | ✅ | `test-results/*.xml` | Path to JUnit XML file(s), supports glob |
-| `api-url` | ✅ | `https://falsky-test.vercel.app` | Falsky API base URL |
+| `api-url` | ✅ | `https://falsky-core.vercel.app` | Falsky API base URL |
 | `api-key` | ✅ | — | Falsky API key |
 | `repo-name` | ❌ | Auto-detected | Repository name |
 | `fail-on-flaky` | ❌ | `false` | Fail action if flaky tests found |
@@ -117,7 +117,7 @@ Analyzed: 2026-07-18
 
 ### 1. Deploy Falsky Backend
 
-Follow the [falsky-test setup guide](https://github.com/Pritahi/falsky-test).
+Follow the [falsky-core setup guide](https://github.com/Pritahi/falsky-core).
 
 ### 2. Get API Key
 

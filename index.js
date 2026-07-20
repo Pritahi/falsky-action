@@ -140,7 +140,7 @@ function buildComment(data) {
   }
 
   comment += `---\n`;
-  comment += `<sub>🤖 Powered by [Falsky](https://github.com/Pritahi/falsky-test) — AI Flaky Test Trust Layer</sub>\n`;
+  comment += `<sub>🤖 Powered by [Falsky](https://github.com/Pritahi/falsky-core) — AI Flaky Test Trust Layer</sub>\n`;
 
   return comment;
 }
