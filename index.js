@@ -194,7 +194,7 @@ async function run() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-Poly-API-Key': apiKey,
+          'X-Falsky-API-Key': apiKey,
         },
         body: JSON.stringify({
           repo_name: repoName,
@@ -222,7 +222,7 @@ async function run() {
     let dashboardData = null;
     try {
       const dashRes = await httpRequest(`${apiUrl}/api/dashboard?repo_name=${encodeURIComponent(repoName)}`, {
-        headers: { 'X-Poly-API-Key': apiKey },
+        headers: { 'X-Falsky-API-Key': apiKey },
         timeout: 15000,
       });
       if (dashRes.status === 200) dashboardData = dashRes.data;
